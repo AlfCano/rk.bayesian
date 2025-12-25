@@ -1,0 +1,157 @@
+<!DOCTYPE
+	rkpluginmap
+>
+<document
+	base_prefix=""
+	namespace="BayesianIndependentTTest"
+	id="BayesianIndependentTTest_rkward"
+	po_id="BayesianIndependentTTest_rkward"
+	priority="medium"
+>
+	<!--
+		this code was generated using the rkwarddev package.
+	perhaps don't make changes here, but in the rkwarddev script instead!
+	-->
+	<!--
+		<dependencies>
+		</dependencies>
+	-->
+	<about
+		name="rk.bayesian"
+		shortinfo="An RKWard plugin for Psychology/Social Sciences (Bayesian Suite). Features 'Jamovi-style' output with Bayes Factors, Posterior Effect Sizes, Descriptives, and Plots."
+		longinfo="An RKWard plugin for Psychology/Social Sciences (Bayesian Suite). Features 'Jamovi-style' output with Bayes Factors, Posterior Effect Sizes, Descriptives, and Plots."
+		version="0.0.1"
+		releasedate="2025-12-24"
+		url="https://github.com/AlfCano/rk.bayesian"
+		license="GPL (&gt;= 3)"
+	>
+		<author
+			given="Alfonso"
+			family="Cano"
+			email="alfonso.cano@correo.buap.mx"
+			role="aut, cre"
+		/>
+	</about>
+	<require
+		map="rkward::menu"
+	/>
+	<require
+		map="rkward::embedded"
+	/>
+	<components>
+		<component
+			id="cmp_BysnIndpndntTTstByOWANOVA"
+			label="Bayesian One-Way ANOVA"
+			type="standard"
+			file="plugins/BayesianOneWayANOVA.xml"
+		>
+		</component>
+		<component
+			id="cmp_BysnIndpndntTTstBysnCrrlt"
+			label="Bayesian Correlation"
+			type="standard"
+			file="plugins/BayesianCorrelation.xml"
+		>
+		</component>
+		<component
+			id="cmp_BysnIndpndntTTstBysnCntnT"
+			label="Bayesian Contingency Table"
+			type="standard"
+			file="plugins/BayesianContingencyTable.xml"
+		>
+		</component>
+		<component
+			id="cmp_BysnIndpndntTTstBysnIndTT"
+			label="Bayesian Independent T-Test"
+			type="standard"
+			file="plugins/BayesianIndependentTTest.xml"
+		>
+		</component>
+	</components>
+	<hierarchy>
+		<menu
+			id="analysis"
+			label="Analysis"
+		>
+			<menu
+				id="PsychologySocialScience"
+				label="Psychology / Social Science"
+			>
+				<menu
+					id="Bayesian"
+					label="Bayesian"
+				>
+					<entry
+						component="cmp_BysnIndpndntTTstByOWANOVA"
+					/>
+				</menu>
+			</menu>
+		</menu>
+		<menu
+			id="analysis"
+			label="Analysis"
+		>
+			<menu
+				id="PsychologySocialScience"
+				label="Psychology / Social Science"
+			>
+				<menu
+					id="Bayesian"
+					label="Bayesian"
+				>
+					<entry
+						component="cmp_BysnIndpndntTTstBysnCrrlt"
+					/>
+				</menu>
+			</menu>
+		</menu>
+		<menu
+			id="analysis"
+			label="Analysis"
+		>
+			<menu
+				id="PsychologySocialScience"
+				label="Psychology / Social Science"
+			>
+				<menu
+					id="Bayesian"
+					label="Bayesian"
+				>
+					<entry
+						component="cmp_BysnIndpndntTTstBysnCntnT"
+					/>
+				</menu>
+			</menu>
+		</menu>
+		<menu
+			id="analysis"
+			label="Analysis"
+		>
+			<menu
+				id="PsychologySocialScience"
+				label="Psychology / Social Science"
+			>
+				<menu
+					id="Bayesian"
+					label="Bayesian"
+				>
+					<entry
+						component="cmp_BysnIndpndntTTstBysnIndTT"
+					/>
+				</menu>
+			</menu>
+		</menu>
+	</hierarchy>
+	<!--
+		<context
+			id="x11"
+		>
+		</context>
+	-->
+	<!--
+		<context
+			id="import"
+		>
+		</context>
+	-->
+</document>

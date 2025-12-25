@@ -1,0 +1,45 @@
+<!DOCTYPE rkhelp >
+<document>
+	<!--
+		this code was generated using the rkwarddev package.
+	perhaps don't make changes here, but in the rkwarddev script instead!
+	-->
+	<title>
+		Bayesian Correlation
+	</title>
+	<summary>
+	</summary>
+	<usage>
+	</usage>
+	<!--
+		<section id="sct_EDITORDE" title="EDIT OR DELETE ME">
+			EDIT OR DELETE ME
+		</section>
+	-->
+	<settings>
+		<setting id="bc_var1">
+		</setting>
+		<setting id="bc_var2">
+		</setting>
+		<caption id="frm_Options" />
+		<setting id="bc_est">
+		</setting>
+		<setting id="bc_plot_post">
+		</setting>
+		<setting id="bc_plot_scat">
+		</setting>
+		<setting id="bc_save">
+		</setting>
+	</settings>
+	<!--
+		<related>
+			<ul>
+				<li>
+					<link href="rkward://rhelp/..." />
+				</li>
+			</ul>
+		</related>
+	-->
+	<technical>
+	</technical>
+</document>

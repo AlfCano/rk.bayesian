@@ -1,0 +1,41 @@
+<!DOCTYPE rkplugin >
+<document>
+	<!--
+		this code was generated using the rkwarddev package.
+	perhaps don't make changes here, but in the rkwarddev script instead!
+	-->
+	<code file="BayesianIndependentTTest.js" />
+	<help file="BayesianIndependentTTest.rkh" />
+	<!--
+		<dependencies>
+		</dependencies>
+	-->
+	<logic>
+		<!--
+			<convert id="!edit!" sources="!edit!" mode="equals" standard="!edit!" />
+		-->
+		<!--
+			<connect governor="!edit!.state" client="!edit!.enabled" />
+		-->
+	</logic>
+	<dialog label="Bayesian Independent T-Test">
+		<row id="row_vDVGVAOAOP">
+			<varselector id="var_selector" />
+			<column id="clm_vDVGVAOAOP">
+				<varslot id="b_dv" label="Dependent Variable" source="var_selector" classes="numeric" required="true" />
+				<varslot id="b_grp" label="Grouping Variable" source="var_selector" required="true" />
+				<frame label="Analysis Options" id="frm_AnlyssOp">
+					<spinbox label="Prior Scale (Cauchy r)" id="b_rscale" initial="0.707" min="0.1" max="2" />
+					<checkbox id="b_est" label="Posterior Effect Size (Median Delta + 95% CI)" value="1" checked="true" />
+					<checkbox id="b_desc" label="Descriptives (Mean/SD)" value="1" checked="true" />
+				</frame>
+				<frame label="Plots" id="frm_Plots">
+					<checkbox id="b_plot_post" label="Plot Posterior Density" value="1" checked="true" />
+					<checkbox id="b_plot_data" label="Plot Data (Boxplot + Jitter)" value="1" checked="true" />
+				</frame>
+				<saveobject label="Save BF Object" checkable="true" checked="true" initial="bf_res" id="b_save" />
+				<preview label="Preview" id="prv_Preview" />
+			</column>
+		</row>
+	</dialog>
+</document>

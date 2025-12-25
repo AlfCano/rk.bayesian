@@ -1,0 +1,36 @@
+<!DOCTYPE rkplugin >
+<document>
+	<!--
+		this code was generated using the rkwarddev package.
+	perhaps don't make changes here, but in the rkwarddev script instead!
+	-->
+	<code file="BayesianCorrelation.js" />
+	<help file="BayesianCorrelation.rkh" />
+	<!--
+		<dependencies>
+		</dependencies>
+	-->
+	<logic>
+		<!--
+			<convert id="!edit!" sources="!edit!" mode="equals" standard="!edit!" />
+		-->
+		<!--
+			<connect governor="!edit!.state" client="!edit!.enabled" />
+		-->
+	</logic>
+	<dialog label="Bayesian Correlation">
+		<row id="row_v1V12V2OOP">
+			<varselector id="var_selector" />
+			<column id="clm_v1V12V2OOP">
+				<varslot id="bc_var1" label="Variable 1" source="var_selector" classes="numeric" required="true" />
+				<varslot id="bc_var2" label="Variable 2" source="var_selector" classes="numeric" required="true" />
+				<frame label="Options" id="frm_Options">
+					<checkbox id="bc_est" label="Posterior Effect Size (Median Rho + 95% CI)" value="1" checked="true" />
+					<checkbox id="bc_plot_post" label="Plot Posterior Density" value="1" checked="true" />
+					<checkbox id="bc_plot_scat" label="Plot Scatterplot" value="1" checked="true" />
+				</frame>
+				<saveobject label="Save BF Object" checkable="true" checked="true" initial="bf_cor" id="bc_save" />
+			</column>
+		</row>
+	</dialog>
+</document>

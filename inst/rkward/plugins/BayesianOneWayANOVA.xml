@@ -1,0 +1,33 @@
+<!DOCTYPE rkplugin >
+<document>
+	<!--
+		this code was generated using the rkwarddev package.
+	perhaps don't make changes here, but in the rkwarddev script instead!
+	-->
+	<code file="BayesianOneWayANOVA.js" />
+	<help file="BayesianOneWayANOVA.rkh" />
+	<!--
+		<dependencies>
+		</dependencies>
+	-->
+	<logic>
+		<!--
+			<convert id="!edit!" sources="!edit!" mode="equals" standard="!edit!" />
+		-->
+		<!--
+			<connect governor="!edit!.state" client="!edit!.enabled" />
+		-->
+	</logic>
+	<dialog label="Bayesian One-Way ANOVA">
+		<row id="row_vDVFD1PDB1">
+			<varselector id="var_selector" />
+			<column id="clm_vDVFD1PDB1">
+				<varslot id="ba_dv" label="Dependent Variable" source="var_selector" classes="numeric" required="true" />
+				<varslot id="ba_fac" label="Factor" source="var_selector" required="true" />
+				<checkbox id="ba_desc" label="Descriptives" value="1" checked="true" />
+				<checkbox id="ba_plot" label="Plot Data (Boxplot)" value="1" checked="true" />
+				<saveobject label="Save BF Object" checkable="true" checked="true" initial="bf_anova" id="ba_save" />
+			</column>
+		</row>
+	</dialog>
+</document>

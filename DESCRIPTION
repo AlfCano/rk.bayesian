@@ -1,0 +1,19 @@
+Package: rk.bayesian
+Type: Package
+Title: An RKWard plugin for Psychology/Social Sciences (Bayesian
+        Suite). Features 'Jamovi-style' output with Bayes Factors,
+        Posterior Effect Sizes, Descriptives, and Plots.
+Version: 0.0.1
+Date: 2025-12-24
+Author: Alfonso Cano
+Maintainer: Alfonso Cano <alfonso.cano@correo.buap.mx>
+Enhances: rkward
+Description: An RKWard plugin for Psychology/Social Sciences (Bayesian
+        Suite). Features 'Jamovi-style' output with Bayes Factors,
+        Posterior Effect Sizes, Descriptives, and Plots.
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyLoad: yes
+URL: https://github.com/AlfCano/rk.bayesian
+Authors@R: person(given="Alfonso", family="Cano",
+        email="alfonso.cano@correo.buap.mx", role=c("aut", "cre"))

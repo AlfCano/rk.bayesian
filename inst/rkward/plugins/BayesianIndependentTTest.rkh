@@ -1,0 +1,50 @@
+<!DOCTYPE rkhelp >
+<document>
+	<!--
+		this code was generated using the rkwarddev package.
+	perhaps don't make changes here, but in the rkwarddev script instead!
+	-->
+	<title>
+		Bayesian Independent T-Test
+	</title>
+	<summary>
+	</summary>
+	<usage>
+	</usage>
+	<!--
+		<section id="sct_EDITORDE" title="EDIT OR DELETE ME">
+			EDIT OR DELETE ME
+		</section>
+	-->
+	<settings>
+		<setting id="b_dv">
+		</setting>
+		<setting id="b_grp">
+		</setting>
+		<caption id="frm_AnlyssOp" />
+		<setting id="b_rscale">
+		</setting>
+		<setting id="b_est">
+		</setting>
+		<setting id="b_desc">
+		</setting>
+		<caption id="frm_Plots" />
+		<setting id="b_plot_post">
+		</setting>
+		<setting id="b_plot_data">
+		</setting>
+		<setting id="b_save">
+		</setting>
+	</settings>
+	<!--
+		<related>
+			<ul>
+				<li>
+					<link href="rkward://rhelp/..." />
+				</li>
+			</ul>
+		</related>
+	-->
+	<technical>
+	</technical>
+</document>

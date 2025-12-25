@@ -1,0 +1,34 @@
+<!DOCTYPE rkplugin >
+<document>
+	<!--
+		this code was generated using the rkwarddev package.
+	perhaps don't make changes here, but in the rkwarddev script instead!
+	-->
+	<code file="BayesianContingencyTable.js" />
+	<help file="BayesianContingencyTable.rkh" />
+	<!--
+		<dependencies>
+		</dependencies>
+	-->
+	<logic>
+		<!--
+			<convert id="!edit!" sources="!edit!" mode="equals" standard="!edit!" />
+		-->
+		<!--
+			<connect governor="!edit!.state" client="!edit!.enabled" />
+		-->
+	</logic>
+	<dialog label="Bayesian Contingency Table">
+		<row id="row_vCTMSTIPMJ">
+			<varselector id="var_selector" />
+			<column id="clm_vCTMSTIPMJ">
+				<varslot id="bct_tab" label="Contingency Table (Matrix)" source="var_selector" required="true" />
+				<dropdown id="bct_sample" label="Sampling Type">
+					<option label="Independent (Poisson)" value="indepMulti" checked="true" />
+					<option label="Joint Multinomial" value="jointMulti" />
+				</dropdown>
+				<saveobject label="Save BF Object" checkable="true" checked="true" initial="bf_ct" id="bct_save" />
+			</column>
+		</row>
+	</dialog>
+</document>
