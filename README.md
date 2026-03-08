@@ -2,6 +2,8 @@
 
 ![Version](https://img.shields.io/badge/Version-0.0.1-orange)
 ![License](https://img.shields.io/badge/License-GPLv3-blue.svg)
+![RKWard](https://img.shields.io/badge/Platform-RKWard-green)
+[![R Linter](https://github.com/AlfCano/rk.bayesian/actions/workflows/lintr.yml/badge.svg)](https://github.com/AlfCano/rk.bayesian/actions/workflows/lintr.yml)
 ![AI Assistance](https://img.shields.io/badge/Created%20with-Gemini-4E86F8)
 
 **rk.bayesian** is an external plug-in for [RKWard](https://rkward.kde.org/) that introduces a full suite of **Bayesian** statistical tests powered by the `BayesFactor` package. It is designed to provide "Jamovi-like" output, including Bayes Factors, posterior effect size estimates, descriptive statistics, and visualization plots.
@@ -14,6 +16,7 @@
 *   **Bayesian Correlation:** Test for associations ($BF_{10}$), estimate posterior Rho ($\rho$), and generate scatterplots with density curves.
 *   **Bayesian Contingency:** Test for independence in contingency tables using Independent (Poisson) or Joint Multinomial sampling.
 *   **Automatic Interpretation:** Results tables include evidence strength labels (Anecdotal, Moderate, Strong, etc.) based on Jeffreys' scale.
+
 
 ## Dependencies
 
@@ -56,13 +59,34 @@ my_matrix <- matrix(c(20, 5, 10, 30), nrow = 2,
 
 ### Phase 2: Bayesian Independent T-Test
 **Goal:** Check the strength of evidence for the difference in tooth length (`len`) by supplement (`supp`).
-1.  **Menu:** `Psychology / Social Science > Bayesian > Bayesian Independent T-Test`
-2.  **Dependent Variable:** `len`.
-3.  **Grouping Variable:** `supp`.
-4.  **Options:** Check "Posterior Effect Size" and "Plot Posterior Density".
-5.  **Submit**.
-    *   *Result:* A table showing the **Bayes Factor ($BF_{10}$)**, the Median Posterior Effect Size (Cohen's d) with 95% Credible Intervals, and a plot of the posterior distribution.
 
+1.  **Menu:** `Psychology / Social Science > Bayesian > Bayesian Independent T-Test`
+
+ <img src="screenshots/example1.png" alt="Hierarchy" width="50%">
+ 
+ *Screenshot of the path in the main menu.*
+
+2.  **Dependent Variable:** `len`.
+
+  <img src="screenshots/example2_1.png" alt="T-Test input" width="60%">
+  
+  *Screenshot of the RKWard interface running the Bayesian T-Test module and setting the dependent and independent variables.*  
+
+3.  **Grouping Variable:** `supp`.
+
+4.  **Options:** Check "Posterior Effect Size" and "Plot Posterior Density".
+
+  <img src="screenshots/example2_2.png" alt="T-Test plot" width="80%">   
+
+  *Screenshot of the RKWard interface running the Bayesian T-Test module and setting the dependent and independent variables with preview.*
+
+5.  **Submit**.
+*   *Result:* A table showing the **Bayes Factor ($BF_{10}$)**, the Median Posterior Effect Size (Cohen's d) with 95% Credible Intervals, and a plot of the posterior distribution.
+  
+  <img src="screenshots/example3.png" alt="T-Test Results" width="90%">
+  
+  *Screenshot of the output in HTML format, showing the results of the Bayes Factor ($BF_{10}$), the descriptive table and the corresponding graphic rendering.*
+ 
 ### Phase 3: Bayesian One-Way ANOVA
 **Goal:** Compare models for plant weight (`weight`) across groups (`group`).
 1.  **Menu:** `Psychology / Social Science > Bayesian > Bayesian One-Way ANOVA`
