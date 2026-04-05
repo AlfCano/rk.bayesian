@@ -3,8 +3,8 @@ Type: Package
 Title: An RKWard plugin for Psychology/Social Sciences (Bayesian
         Suite). Features 'Jamovi-style' output with Bayes Factors,
         Posterior Effect Sizes, Descriptives, and Plots.
-Version: 0.0.1
-Date: 2025-12-24
+Version: 0.0.2
+Date: 2026-04-04
 Author: Alfonso Cano
 Maintainer: Alfonso Cano <alfonso.cano@correo.buap.mx>
 Enhances: rkward

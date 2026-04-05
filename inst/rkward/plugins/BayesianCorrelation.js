@@ -34,9 +34,9 @@ function calculate(is_preview){
     }
   
     var v1=getValue("bc_var1"); var v2=getValue("bc_var2"); var est=getValue("bc_est");
-    
+
     echo("bf_cor <- BayesFactor::correlationBF(y = " + v1 + ", x = " + v2 + ")\n");
-    
+
     if (est == "1") {
         echo("chains <- BayesFactor::posterior(bf_cor, iterations = 2000, progress = FALSE)\n");
         echo("post_summ <- data.frame(Parameter = \"Rho\", Median = median(chains[,\"rho\"]), Lower = quantile(chains[,\"rho\"], 0.025), Upper = quantile(chains[,\"rho\"], 0.975))\n");

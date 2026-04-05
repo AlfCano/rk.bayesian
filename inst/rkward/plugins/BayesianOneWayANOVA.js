@@ -35,9 +35,9 @@ function calculate(is_preview){
   
     var dv=getValue("ba_dv"); var fac=getValue("ba_fac"); var desc=getValue("ba_desc");
     var p_dv=parseVar(dv); var p_fac=parseVar(fac); var df=p_dv.df; var fmla=p_dv.raw_col+"~"+p_fac.raw_col;
-    
+
     echo("bf_anova <- BayesFactor::anovaBF(formula = " + fmla + ", data = as.data.frame(" + df + "))\n");
-    
+
     if (desc == "1") {
         echo("desc_tab <- " + df + " %>% group_by(" + p_fac.raw_col + ") %>% summarise(N=n(), Mean=mean(" + p_dv.raw_col + ", na.rm=T), SD=sd(" + p_dv.raw_col + ", na.rm=T))\n");
     }
@@ -78,10 +78,10 @@ function printout(is_preview){
     echo("res_tab$Evidence <- cut(res_tab$BF10, breaks=c(0,1,3,10,30,100,Inf), labels=c(\"Favor Null\",\"Anecdotal\",\"Moderate\",\"Strong\",\"Very Strong\",\"Extreme\"))\n");
     echo("rk.results(res_tab)\n");
     echo("rk.print.literal(\"Denominator: Intercept only\")\n");
-    
-    if (desc == "1") { 
+
+    if (desc == "1") {
         echo("rk.header(\"Group Descriptives\", level=4);\n");
-        echo("rk.results(desc_tab)\n"); 
+        echo("rk.results(desc_tab)\n");
     }
 
     if (plot == "1") {

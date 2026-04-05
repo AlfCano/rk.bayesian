@@ -53,17 +53,17 @@ function calculate(is_preview){
     var dv=getValue("b_dv"); var grp=getValue("b_grp"); var rscale=getValue("b_rscale");
     var est=getValue("b_est"); var desc=getValue("b_desc");
     var p_dv=parseVar(dv); var p_grp=parseVar(grp); var df=p_dv.df; var fmla=p_dv.raw_col+"~"+p_grp.raw_col;
-    
+
     // 1. Calculate BF
     echo("bf_res <- BayesFactor::ttestBF(formula = " + fmla + ", data = as.data.frame(" + df + "), rscale = " + rscale + ")\n");
-    
+
     // 2. Posterior Sampling (Effect Size)
     if (est == "1") {
         echo("chains <- BayesFactor::posterior(bf_res, iterations = 2000, progress = FALSE)\n");
         echo("post_summ <- data.frame(Parameter = \"Cohens d (Delta)\", Median = median(chains[,\"delta\"]), Lower = quantile(chains[,\"delta\"], 0.025), Upper = quantile(chains[,\"delta\"], 0.975))\n");
         echo("names(post_summ) <- c(\"Parameter\", \"Median\", \"95% CI Lower\", \"95% CI Upper\")\n");
     }
-    
+
     // 3. Descriptives
     if (desc == "1") {
         echo("desc_tab <- " + df + " %>% group_by(" + p_grp.raw_col + ") %>% summarise(N=n(), Mean=mean(" + p_dv.raw_col + ", na.rm=T), SD=sd(" + p_dv.raw_col + ", na.rm=T))\n");
@@ -112,14 +112,14 @@ function printout(is_preview){
     echo("bf_tab$Evidence <- cut(bf_tab[[1]], breaks=c(0,1,3,10,30,100,Inf), labels=c(\"Favor Null\",\"Anecdotal\",\"Moderate\",\"Strong\",\"Very Strong\",\"Extreme\"))\n");
     echo("rk.results(bf_tab)\n");
 
-    if (desc == "1") { 
+    if (desc == "1") {
         echo("rk.header(\"Group Descriptives\", level=4);\n");
-        echo("rk.results(desc_tab)\n"); 
+        echo("rk.results(desc_tab)\n");
     }
 
-    if (est == "1") { 
+    if (est == "1") {
         echo("rk.header(\"Posterior Effect Size Estimates\", level=4);\n");
-        echo("rk.results(post_summ)\n"); 
+        echo("rk.results(post_summ)\n");
     }
 
     // Plots
