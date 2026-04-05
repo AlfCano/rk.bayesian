@@ -15,7 +15,7 @@ local({
     ),
     about = list(
       desc = "An RKWard plugin for Psychology/Social Sciences (Bayesian Suite). Features 'Jamovi-style' output with Bayes Factors, Posterior Effect Sizes, Descriptives, and Plots.",
-      version = "0.0.1", # Frozen
+      version = "0.0.2", # Frozen
       url = "https://github.com/AlfCano/rk.bayesian",
       license = "GPL (>= 3)"
     )
@@ -336,7 +336,7 @@ local({
     show = FALSE
   )
 
-  cat("\nPlugin package 'rk.bayesian' (v0.0.1) generated successfully.\n")
+  cat("\nPlugin package 'rk.bayesian' (v0.0.2) generated successfully.\n")
   cat("To complete installation:\n")
   cat("  1. rk.updatePluginMessages(path=\".\")\n")
   cat("  2. devtools::install(\".\")\n")

@@ -1,0 +1,120 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: rk.bayesian 0.0.1\n"
+"Report-Msgid-Bugs-To: alfonso.cano@correo.buap.mx\n"
+"POT-Creation-Date: 2026-03-23 11:22-0600\n"
+"PO-Revision-Date: 2026-03-23 11:22-0600\n"
+"Last-Translator: \n"
+"Language-Team: Spanish\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Psychology / Social Science"
+msgstr "Psicología / Ciencias Sociales"
+
+msgid "Bayesian"
+msgstr "Bayesiano"
+
+msgid "Bayesian Independent T-Test"
+msgstr "Prueba T Independiente Bayesiana"
+
+msgid "Calculate Bayes Factor (BF10) and Posterior Effect Size (Delta)."
+msgstr "Calcula el Factor de Bayes (BF10) y el Tamaño del Efecto a Posteriori (Delta)."
+
+msgid "Select Dependent Variable and Grouping Variable."
+msgstr "Selecciona la Variable Dependiente y la Variable de Agrupación."
+
+msgid "Dependent Variable"
+msgstr "Variable Dependiente"
+
+msgid "Grouping Variable"
+msgstr "Variable de Agrupación"
+
+msgid "Prior Scale (Cauchy r)"
+msgstr "Escala Previa (Cauchy r)"
+
+msgid "Posterior Effect Size (Median Delta + 95% CI)"
+msgstr "Tamaño del Efecto a Posteriori (Mediana Delta + 95% IC)"
+
+msgid "Descriptives (Mean/SD)"
+msgstr "Descriptivos (Media/DE)"
+
+msgid "Analysis Options"
+msgstr "Opciones de Análisis"
+
+msgid "Plot Posterior Density"
+msgstr "Graficar Densidad a Posteriori"
+
+msgid "Plot Data (Boxplot + Jitter)"
+msgstr "Graficar Datos (Diagrama de Caja + Jitter)"
+
+msgid "Plots"
+msgstr "Gráficos"
+
+msgid "Save BF Object"
+msgstr "Guardar Objeto BF"
+
+msgid "Bayesian One-Way ANOVA"
+msgstr "ANOVA de un Factor Bayesiano"
+
+msgid "Calculate BF10 for ANOVA models."
+msgstr "Calcula el BF10 para modelos ANOVA."
+
+msgid "Select Dependent Variable and Factor."
+msgstr "Selecciona la Variable Dependiente y el Factor."
+
+msgid "Factor"
+msgstr "Factor"
+
+msgid "Descriptives"
+msgstr "Descriptivos"
+
+msgid "Plot Data (Boxplot)"
+msgstr "Graficar Datos (Diagrama de Caja)"
+
+msgid "Bayesian Correlation"
+msgstr "Correlación Bayesiana"
+
+msgid "Bayes Factor and Posterior Rho."
+msgstr "Factor de Bayes y Rho a Posteriori."
+
+msgid "Select 2 numeric variables."
+msgstr "Selecciona 2 variables numéricas."
+
+msgid "Variable 1"
+msgstr "Variable 1"
+
+msgid "Variable 2"
+msgstr "Variable 2"
+
+msgid "Plot Scatterplot"
+msgstr "Graficar Diagrama de Dispersión"
+
+msgid "Options"
+msgstr "Opciones"
+
+msgid "Bayesian Contingency"
+msgstr "Contingencia Bayesiana"
+
+msgid "Bayesian Contingency Table"
+msgstr "Tabla de Contingencia Bayesiana"
+
+msgid "Calculate BF10 for a contingency table."
+msgstr "Calcula el BF10 para una tabla de contingencia."
+
+msgid "Select a table/matrix object."
+msgstr "Selecciona un objeto de tabla/matriz."
+
+msgid "Contingency Table (Matrix)"
+msgstr "Tabla de Contingencia (Matriz)"
+
+msgid "Sampling Type"
+msgstr "Tipo de Muestreo"
+
+msgid "Independent (Poisson)"
+msgstr "Independiente (Poisson)"
+
+msgid "Joint Multinomial"
+msgstr "Multinomial Conjunto"

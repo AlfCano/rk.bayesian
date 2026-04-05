@@ -1,6 +1,6 @@
 # rk.bayesian
 
-![Version](https://img.shields.io/badge/Version-0.0.1-orange)
+![Version](https://img.shields.io/badge/Version-0.0.2-orange)
 ![License](https://img.shields.io/badge/License-GPLv3-blue.svg)
 ![RKWard](https://img.shields.io/badge/Platform-RKWard-green)
 [![R Linter](https://github.com/AlfCano/rk.bayesian/actions/workflows/lintr.yml/badge.svg)](https://github.com/AlfCano/rk.bayesian/actions/workflows/lintr.yml)
@@ -17,6 +17,15 @@
 *   **Bayesian Contingency:** Test for independence in contingency tables using Independent (Poisson) or Joint Multinomial sampling.
 *   **Automatic Interpretation:** Results tables include evidence strength labels (Anecdotal, Moderate, Strong, etc.) based on Jeffreys' scale.
 
+## 🌍 Internationalization
+
+The interface is fully localized to match your RKWard language settings:
+
+*   🇺🇸 **English** (Default)
+*   🇪🇸 **Spanish** (`es`)
+*   🇫🇷 **French** (`fr`)
+*   🇩🇪 **German** (`de`)
+*   🇧🇷 **Portuguese** (Brazil) (`pt_BR`)
 
 ## Dependencies
 
